@@ -1,0 +1,5 @@
+- name: download docker-compose binary
+  get_url:
+    url: https://github.com/docker/compose/releases/download/1.12.0/docker-compose-Linux-{{ ansible_architecture }}
+    dest: /usr/local/bin/docker-compose
+    mode: '0755'
